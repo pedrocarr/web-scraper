@@ -1,0 +1,10 @@
+Simple web scraping using express, axios and cheerio
+
+
+How to run in your machine :
+
+--- npm install to install the dependencies
+
+--- npm start to lauch the app
+
+Have Fun !!!
