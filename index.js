@@ -12,5 +12,17 @@ const url = 'https://www.theguardian.com/international'
 axios(url)
     .then(response => {
         const html = response.data
-        console.log(html)
+        const $ = cheerio.load(html)
+        const articles = []
+
+        $('.fc-item__title', html).each(function() {
+            const title = $(this).text()
+            const url = $(this).find('a').attr('href')
+            articles.push({
+                title,
+                url
+            })
+        })
+
+        console.log(articles)
     })
