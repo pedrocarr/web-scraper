@@ -1,10 +1,13 @@
-Simple web scraping using express, axios and cheerio
+# WEB SCRAPER MADE TO GET INFORMATIONS FROM WEBSITES
+
+## INSTALLATION
 
 
-How to run in your machine :
+```bash
+npm install
 
---- npm install to install the dependencies
+npm start
+```
 
---- npm start to launch the app
 
-Have Fun !!!
+
